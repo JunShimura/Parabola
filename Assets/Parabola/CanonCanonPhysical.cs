@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CanonPhysical : MonoBehaviour
+public class Canon : MonoBehaviour
 {
     [SerializeField] GameObject targetObject; // ターゲットオブジェクト
     [SerializeField] GameObject bulletprefab; // 弾のプレハブ
