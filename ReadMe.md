@@ -337,3 +337,6 @@ $\left(\frac{gd^2}{2V^2}\right) \tan^2\theta - (d) \tan\theta + \left(y + \frac{
 `CannonLogical.cs` は「**時刻表通りに走る電車**」のように、軌道計算に基づいて正確で予測可能な動きをします。一方、`CannonPhysical.cs` は「**実際に空を飛ぶボール**」のように、現実の物理法則に従って、より自然で変化に富んだ動きをします。
 
 どちらのスクリプトを使うかは、ゲームやアプリで「何を一番大切にしたいか」によって選びます。**計算による正確さ**か、それとも**物理シミュレーションによるリアルさ**か、それが大きな違いです。
+
+
+SLIDE：[https://claude.ai/public/artifacts/4afedbfe-586d-4a7d-a638-22db0a45b11b](url)
