@@ -46,6 +46,7 @@ public class CannonPhysical : MonoBehaviour
         float g = Mathf.Abs(gravityY);
 
         float speed2 = speed * speed;
+        // 到達可能かどうかの判定
         float discriminant = speed2 * speed2 - g * (g * distance * distance + 2 * yOffset * speed2);
 
         if (distance < 0.01f)
