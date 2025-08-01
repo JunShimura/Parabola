@@ -128,32 +128,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 24216997}
-  - component: {fileID: 24216996}
   - component: {fileID: 24216998}
+  - component: {fileID: 24216999}
   m_Layer: 0
-  m_Name: Canon
+  m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &24216996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24216995}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3952b907fcffb7e4093cf424235cc788, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 112130580}
-  bulletprefab: {fileID: 1463960214233058502, guid: 53cbf11679fe83e4b93bc11188d98c0a, type: 3}
-  initialSpeed: 10
-  maxElevationAngle: 45
-  mximizeFlyTime: 0
 --- !u!4 &24216997
 Transform:
   m_ObjectHideFlags: 0
@@ -163,7 +146,7 @@ Transform:
   m_GameObject: {fileID: 24216995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -2}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -177,7 +160,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24216995}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ce40b98774e69945bf51526710c8e40, type: 3}
   m_Name: 
@@ -186,6 +169,23 @@ MonoBehaviour:
   bulletprefab: {fileID: 1463960214233058502, guid: 53cbf11679fe83e4b93bc11188d98c0a, type: 3}
   apexHeightOffset: 5
   simulationInterval: 0.02
+--- !u!114 &24216999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24216995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3952b907fcffb7e4093cf424235cc788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 112130580}
+  bulletprefab: {fileID: 1463960214233058502, guid: 53cbf11679fe83e4b93bc11188d98c0a, type: 3}
+  initialSpeed: 10
+  maxElevationAngle: 45
+  mximizeFlyTime: 1
 --- !u!1 &112130580
 GameObject:
   m_ObjectHideFlags: 0

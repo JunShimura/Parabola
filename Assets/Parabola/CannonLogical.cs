@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CanonLogical : MonoBehaviour
+public class CannonLogical : MonoBehaviour
 {
     [SerializeField] GameObject targetObject;
     [SerializeField] GameObject bulletprefab;
@@ -13,12 +13,13 @@ public class CanonLogical : MonoBehaviour
 
         Vector3 start = transform.position;
         Vector3 end = targetObject.transform.position;
-
+        Vector3[] trajectory = GenerateSymmetricParabolaTrajectory(start, end, apexHeightOffset, simulationInterval);
+        this.transform.rotation = Quaternion.LookRotation(trajectory[1] - trajectory[0]); // 最初の2点で向きを設定
         if (Input.GetMouseButtonDown(0) && bulletprefab != null)
         {
             GameObject bullet = Instantiate(bulletprefab, start, Quaternion.identity);
             BulletUpdater updater = bullet.AddComponent<BulletUpdater>();
-            Vector3[] trajectory = GenerateSymmetricParabolaTrajectory(start, end, apexHeightOffset, simulationInterval);
+            bullet.GetComponent<Rigidbody>().isKinematic = true; // Rigidbodyをキネマティックに設定
             updater.Initialize(trajectory, simulationInterval);
         }
     }

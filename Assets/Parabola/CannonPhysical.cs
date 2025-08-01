@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CanonPhysical: MonoBehaviour
+public class CannonPhysical : MonoBehaviour
 {
     [SerializeField] GameObject targetObject; // ターゲットオブジェクト
     [SerializeField] GameObject bulletprefab; // 弾のプレハブ
@@ -27,11 +27,12 @@ public class CanonPhysical: MonoBehaviour
             // 発射方向にforwardを向けて生成
             GameObject bullet = Instantiate(bulletprefab, start, Quaternion.LookRotation(velocity));
             Rigidbody rb = bullet.GetComponent<Rigidbody>();
-            if (rb != null)
+            if (rb == null)
             {
-                rb.linearVelocity = velocity; // velocityを直接セット
-                rb.angularVelocity = Vector3.zero;
+                rb = bullet.AddComponent<Rigidbody>(); // Rigidbodyがなければ追加
             }
+            rb.linearVelocity = velocity; // velocityを直接セット
+            rb.angularVelocity = Vector3.zero;
         }
     }
 
