@@ -339,4 +339,4 @@ $\left(\frac{gd^2}{2V^2}\right) \tan^2\theta - (d) \tan\theta + \left(y + \frac{
 どちらのスクリプトを使うかは、ゲームやアプリで「何を一番大切にしたいか」によって選びます。**計算による正確さ**か、それとも**物理シミュレーションによるリアルさ**か、それが大きな違いです。
 
 
-SLIDE：[https://claude.ai/public/artifacts/4afedbfe-586d-4a7d-a638-22db0a45b11b]([https://claude.ai/public/artifacts/4afedbfe-586d-4a7d-a638-22db0a45b11b)
+SLIDE：[https://claude.ai/public/artifacts/4afedbfe-586d-4a7d-a638-22db0a45b11b](https://claude.ai/public/artifacts/4afedbfe-586d-4a7d-a638-22db0a45b11b)
